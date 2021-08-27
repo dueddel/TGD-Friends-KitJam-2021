@@ -1,0 +1,546 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://KitJam-2021-08-levelkit.meshlib" type="MeshLibrary" id=1]
+
+[node name="sample level" type="Spatial"]
+
+[node name="corridors" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 5, 4, 5 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 0, 0, 72, 1, 0, 72, 2, 0, 20, 3, 0, 72, 4, 0, 73, 5, 0, 126, 65530, 0, 1048628, 65531, 0, 655423, 65532, 0, 655432, 65533, 0, 72, 65534, 0, 72, 65535, 0, 72, 0, 1, 1048674, 1, 1, 1048718, 2, 1, 1441934, 3, 1, 655459, 4, 1, 47, 5, 1, 1441918, 65530, 1, 1048628, 65531, 1, 63, 65532, 1, 129, 0, 2, 655502, 1, 2, 1441934, 4, 2, 1441891, 65530, 2, 1048639, 65532, 2, 1441897, 65530, 3, 1048628, 65531, 3, 146, 65530, 4, 655506, 65531, 4, 1441938, 65530, 65532, 1048705, 65531, 65532, 52, 65532, 65532, 129, 65530, 65533, 1048628, 65531, 65533, 1048603, 65532, 65533, 1441844, 2, 65534, 655458, 3, 65534, 142, 65530, 65534, 1048628, 65531, 65534, 655412, 65532, 65534, 1441921, 2, 65535, 1048718, 3, 65535, 1441934, 65530, 65535, 1048639 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="conduits" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 5, 4, 5 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 0, 0, 655438, 1, 0, 655435, 2, 0, 1441815, 3, 0, 655436, 4, 0, 74, 5, 0, 120, 65533, 0, 655462, 65534, 0, 78, 65535, 0, 655437, 0, 1, 1048676, 1, 1, 1048695, 2, 1, 1441912, 3, 1, 655462, 4, 1, 49, 5, 1, 1441911, 0, 2, 655479, 1, 2, 1441912, 4, 2, 1441893, 65530, 65533, 1048677, 65532, 65533, 1048676, 2, 65534, 655460, 3, 65534, 120, 65530, 65534, 655480, 65531, 65534, 655436, 65532, 65534, 1441911, 2, 65535, 1048696, 3, 65535, 1441911 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="frames" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 5, 4, 5 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 1, 0, 655449, 2, 0, 1048584, 3, 0, 89, 4, 0, 655422, 5, 0, 114, 65530, 0, 655395, 65531, 0, 60, 65532, 0, 60, 65533, 0, 60, 65534, 0, 86, 0, 1, 1048665, 1, 1, 1048689, 2, 1, 1441905, 3, 1, 655448, 4, 1, 36, 5, 1, 1441906, 65530, 1, 1441878, 0, 2, 655473, 1, 2, 1441905, 4, 2, 1441880, 65530, 65533, 1048662, 2, 65534, 655449, 3, 65534, 113, 65530, 65534, 1048636, 2, 65535, 1048689, 3, 65535, 1441905, 65530, 65535, 1048636 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="floors" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 5, 4, 5 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 0, 0, 65, 1, 0, 65, 2, 0, 1048586, 3, 0, 65, 4, 0, 64, 5, 0, 115, 65530, 0, 1048621, 65531, 0, 71, 65532, 0, 69, 65533, 0, 69, 65534, 0, 69, 65535, 0, 69, 0, 1, 1048667, 1, 1, 1048711, 2, 1, 1441927, 3, 1, 655450, 4, 1, 41, 5, 1, 1441907, 65530, 1, 1048627, 65531, 1, 80, 65532, 1, 128, 0, 2, 655495, 1, 2, 1441927, 4, 2, 1441882, 65530, 2, 1048646, 65532, 2, 1441896, 65530, 3, 1048620, 65531, 3, 140, 65530, 4, 655500, 65531, 4, 1441932, 65530, 65532, 1048697, 65531, 65532, 42, 65532, 65532, 121, 65530, 65533, 1048618, 65531, 65533, 1048592, 65532, 65533, 1441834, 2, 65534, 655451, 3, 65534, 135, 65530, 65534, 1048618, 65531, 65534, 655402, 65532, 65534, 1441913, 2, 65535, 1048711, 3, 65535, 1441927, 65530, 65535, 1048647 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="lamps" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 5, 4, 5 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 0, 0, 58, 4, 0, 655417, 5, 0, 655470, 65530, 0, 1048604, 65532, 0, 58, 65534, 0, 58, 0, 1, 1048661, 1, 1, 1441902, 2, 1, 1048686, 3, 1, 655417, 4, 1, 655393, 5, 1, 1048686, 65531, 1, 655418, 0, 2, 110, 1, 2, 1048686, 4, 2, 1441877, 65532, 2, 1441850, 65530, 65532, 1441902, 65531, 65532, 655393, 65532, 65532, 655470, 65530, 65533, 1441825, 65531, 65533, 1048581, 65532, 65533, 1048609, 65530, 65534, 1441825, 65531, 65534, 33, 65532, 65534, 1048686 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="light strips" type="GridMap" parent="."]
+mesh_library = ExtResource( 1 )
+cell_size = Vector3( 5, 4, 5 )
+cell_center_y = false
+data = {
+"cells": PoolIntArray( 0, 0, 655416, 1, 0, 655416, 3, 0, 655416, 4, 0, 655414, 5, 0, 107, 65530, 0, 1048580, 65531, 0, 655363, 65532, 0, 655363, 65533, 0, 655363, 65534, 0, 655363, 65535, 0, 655363, 0, 1, 1048660, 1, 1, 1048709, 2, 1, 1441925, 3, 1, 655442, 4, 1, 30, 5, 1, 1441899, 65530, 1, 1048580, 65531, 1, 3, 65532, 1, 2, 0, 2, 655493, 1, 2, 1441925, 4, 2, 1441874, 65530, 2, 1048631, 65532, 2, 1441793, 65530, 3, 1048607, 65531, 3, 132, 65530, 4, 655492, 65531, 4, 1441924, 65530, 65532, 1048682, 65531, 65532, 29, 65532, 65532, 106, 65530, 65533, 1048605, 65532, 65533, 1441821, 2, 65534, 655444, 3, 65534, 133, 65530, 65534, 1048605, 65531, 65534, 655389, 65532, 65534, 1441898, 2, 65535, 1048709, 3, 65535, 1441925, 65530, 65535, 1441845 )
+}
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, 0, 0 )
+}
+
+[node name="lights" type="Spatial" parent="."]
+
+[node name="OmniLight" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.9821, 0.986611, 20.0152 )
+light_color = Color( 0.384314, 0.815686, 0.298039, 1 )
+light_specular = 0.0
+shadow_enabled = true
+omni_range = 30.4
+omni_attenuation = 2.63902
+
+[node name="OmniLight2" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.4555, 2.30003, -16.2843 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight35" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.46881, 2.56207, 8.66757 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight36" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49746, 2.56207, 11.4275 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight37" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.73424, 2.56207, 12.6489 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight38" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.52251, 2.56207, 12.5838 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight39" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.64915, 2.56207, 11.4139 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight40" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.41723, 2.56207, 8.51441 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight41" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.64607, 2.56207, 7.56438 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight42" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4903, 2.56207, 7.48204 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight43" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7442, 2.56207, 6.26973 )
+light_color = Color( 0.98, 0.69, 1.5, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight44" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4837, 2.56207, 11.369 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight45" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2659, 2.56207, 8.52952 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight46" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.081, 2.56207, 6.09496 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight47" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2431, 2.56207, 7.26033 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight48" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5726, 2.56207, 8.56045 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight49" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7071, 2.56207, 7.3472 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight50" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.394, 2.56207, 7.47722 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight51" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4256, 2.56207, 6.34205 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight52" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.2492, 2.56207, 3.58547 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight53" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2701, 2.56207, 2.62187 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight54" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3601, 2.56207, 1.20751 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight55" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5208, 2.56207, 3.63598 )
+light_color = Color( 0.8, 0.635294, 0.372549, 1 )
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight56" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6542, 0.426192, -7.56741 )
+light_color = Color( 0.372549, 0.73989, 0.8, 1 )
+light_specular = 0.0
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight57" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0317, 0.426192, -6.6507 )
+light_color = Color( 0.372549, 0.73989, 0.8, 1 )
+light_specular = 0.0
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight58" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9481, 0.426192, -2.91147 )
+light_color = Color( 0.372549, 0.73989, 0.8, 1 )
+light_specular = 0.0
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight59" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5567, 0.426192, -2.0644 )
+light_color = Color( 0.372549, 0.73989, 0.8, 1 )
+light_specular = 0.0
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 1.31951
+
+[node name="OmniLight4" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.7726, 2.30003, -17.7069 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight5" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7834, 2.30003, -13.6964 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight6" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.7476, 2.30003, -12.6316 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight7" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5932, 2.30003, -11.2569 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight8" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.6428, 2.30003, -8.56662 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight9" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.7558, 2.30003, -7.50447 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight10" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.479, 2.30003, -7.49876 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight11" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7862, 2.30003, -7.44212 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight12" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7256, 2.30003, -8.62491 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight13" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5232, 2.30003, -11.3005 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight14" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7069, 2.30003, -12.5381 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight15" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.4191, 2.30003, -12.5497 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight16" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.573, 2.30003, -13.6394 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight17" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7849, 2.30003, -16.3687 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight18" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6139, 2.30003, -17.4077 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight19" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5822, 2.30003, -17.7183 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight20" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3872, 2.30003, -17.6265 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight21" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6047, 2.30003, -16.5143 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight22" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.5881, 2.30003, -13.8151 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight23" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7642, 2.30003, -11.3937 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight24" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7754, 2.30003, -8.60396 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight25" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7524, 2.30003, -6.32058 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight26" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4336, 2.30003, -7.54409 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight27" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5073, 2.30003, -12.7763 )
+light_color = Color( 1.4, 1, 1, 1 )
+light_energy = 0.6
+shadow_enabled = true
+omni_range = 3.5
+omni_attenuation = 1.41422
+
+[node name="OmniLight28" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.0215, 2.5199, 2.51478 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight29" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5586, 2.5199, 0.695323 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight30" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.4749, 2.5199, 4.26949 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight60" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9942, 2.5199, 12.5712 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight61" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.0026, 2.5199, 12.4894 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight63" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5028, 2.5199, 5.97139 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight62" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5319, 2.5199, 9.07842 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight31" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.53246, 2.41456, 0.993451 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight32" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.50876, 2.37945, 4.04678 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight33" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.51804, 2.5199, 4.20722 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="OmniLight34" type="OmniLight" parent="lights"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.52023, 2.5199, 0.90786 )
+light_color = Color( 1.5, 1.3, 1.2, 1 )
+light_energy = 0.5
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.840303, -0.395357, 0.370923, 0, 0.684212, 0.729283, -0.542117, 0.612819, -0.574945, 11.8164, 23.2326, -18.3159 )
